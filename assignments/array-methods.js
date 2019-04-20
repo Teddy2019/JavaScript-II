@@ -96,7 +96,7 @@ shirtSiz3XL = runners.filter(function(element){return element.shirt_size === '3X
 const total = shirtSiz3XL.reduce((total, element)=> total + element.donation, 0);
 console.log(total);
 
-// Problem 3 Log full name and donation amount and sort from high to low donation
+// Problem 3 Log  fullname and donation amount 
 let nameDonation = [];
-runners.forEach(function (element){nameDonation.push('{ '+ 'fullName: ' + element.first_name +  element.last_name +' , ' + 'donation: '+ element.donation + ' }')});
+runners.forEach(function (element){nameDonation.push( 'fullName: ' + element.first_name + ' ' +  element.last_name +' & ' + 'donation: '+ element.donation +'.00 $')});
 console.log(nameDonation);

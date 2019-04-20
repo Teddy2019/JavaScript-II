@@ -12,13 +12,16 @@
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
-
 // ==== Challenge 2: Create a counter function ====
-const counter = () => {
+let count = 0;
+const counter =() => {
   // Return a function that when invoked increments and returns a counter variable.
-  var count = 0;
-  return count++;
+     count =count+1;
+    return count;
 };
+console.log(counter());
+console.log(counter());
+console.log(counter());
 // Example usage: 
 //const newCounter = counter();
 //newCounter(); // 1
